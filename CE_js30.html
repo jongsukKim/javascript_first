@@ -1,0 +1,28 @@
+<!-- 객체의 쓰기와 읽기 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      var coworkers = {
+        "programer" : "egoing",
+        "designer" : "leezche"
+      };
+      document.write("programer : " + coworkers.programer + "<br>");
+      document.write("designer : " + coworkers.designer + "<br>");
+
+      coworkers.bookkeeper = "duru";
+      document.write("bookkeeper : " + coworkers.bookkeeper + "<br>");
+
+      // 변수면에는 공백 사용 불가 대괄호에 넣어서 스트링으로 변환하면 사용가능
+      // coworkers.data_scientist = "taeho";
+      coworkers["data scientist"] = "taeho";
+      document.write("data scientist : " + coworkers["data scientist"]);
+    </script>
+  </body>
+</html>
